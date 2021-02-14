@@ -11,8 +11,8 @@ canvas, body{
     margin: 0;
 }
 
-/* .wrapper {
-    background: url(../image/bg.jpg);
+.wrapper {
+    background: url(../image/bgo.jpg);
     min-height: 200vh;
     width: 100%;
     background-position: top center;
@@ -20,7 +20,7 @@ canvas, body{
     position: relative;
     -webkit-background-size: cover;
     background-size: cover;
-} */
+}
 
 .fr {
     position: relative;
@@ -214,7 +214,7 @@ canvas, body{
 .loaded .preloader {
     display: none;
 }
-
+/* 
 @media only screen and (max-width: 1099px) {
     .wrapper {
         background: url(../image/bgm.jpg);
@@ -233,4 +233,4 @@ canvas, body{
         -webkit-background-size: cover;
         background-size: cover;
     }
-}
+} */
