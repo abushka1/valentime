@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coutdown Timer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+    </div>
+    <section class="wrapper">
+        <div class="fr">
+            <div class="countdown-container">
+                <p class="paraHp">до твоего дня рождения, любимая</p>
+                <div class="countdown-el days-c absoluteDiv">
+                    <p class="big-text" id="days">0</p>
+                    <span>days</span>
+                </div>
+                <div class="countdown-el hours-c absoluteDiv">
+                    <p class="big-text" id="hours">0</p>
+                    <span>hours</span>
+                </div>
+                <div class="countdown-el mins-c absoluteDiv">
+                    <p class="big-text" id="mins">0</p>
+                    <span>mins</span>
+                </div>
+                <div class="countdown-el seconds-c absoluteDiv">
+                    <p class="big-text" id="seconds">0</p>
+                    <span>seconds</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup">
+            <div class="popup-content">
+                <button class="popup-close">&times;</button>
+                <p>Валентинки в задницу летят.</p>
+            </div>
+        </div>
+        <div class="btn">
+            <button id="valentine">Нажми🎉</button>
+        </div>
+
+    </section>
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js" integrity="sha256-7LkWEzqTdpEfELxcZZlS6wAx5Ff13zZ83lYO2/ujj7g=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('#valentine').on('click', function(event) {
+                event.preventDefault();
+                $('.popup').fadeIn();
+            });
+            $('.popup-close').on('click', function(event) {
+                event.preventDefault();
+                $('.popup').fadeOut();
+            });
+        })
+    </script>
+</body>
+</html>
